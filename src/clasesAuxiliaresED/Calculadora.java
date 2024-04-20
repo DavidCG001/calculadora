@@ -88,7 +88,7 @@ public class Calculadora {
     }
 
     //metodos para multiplicar
-     public void multiplica(float n1, float n2) {
+    public void multiplica(float n1, float n2) {
         System.out.println("La multiplicación de " + n1 + " por " + n2 + "es " + (n1 * n2));
 
     }
@@ -98,9 +98,9 @@ public class Calculadora {
         return (n1 * n2);
 
     }
-    
+
     //metodos para dividir
-     public void divide(float n1, float n2) {
+    public void divide(float n1, float n2) {
         System.out.println("La división de " + n1 + " entre " + n2 + " es "
                 + (n1 / n2));
     }
@@ -109,6 +109,16 @@ public class Calculadora {
         System.out.println("La división de " + n1 + " entre " + n2 + " es "
                 + (n1 / n2));
         return (n1 / n2);
+    }
+
+    //metodo para el modulo
+    public int calcularModulo(int dividend, int divisor) {
+        if (divisor == 0) {
+            throw new ArithmeticException("No se puede dividir por cero");
+        }
+
+        int modulo = dividend % divisor;
+        return modulo;
     }
 
     public void datos() {
