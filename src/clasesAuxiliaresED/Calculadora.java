@@ -98,6 +98,18 @@ public class Calculadora {
         return (n1 * n2);
 
     }
+    
+    //metodos para dividir
+     public void divide(float n1, float n2) {
+        System.out.println("La división de " + n1 + " entre " + n2 + " es "
+                + (n1 / n2));
+    }
+
+    public double divide(double n1, double n2) {
+        System.out.println("La división de " + n1 + " entre " + n2 + " es "
+                + (n1 / n2));
+        return (n1 / n2);
+    }
 
     public void datos() {
         System.out.println("La marca es " + this.marca + " el modelo es " + this.modelo + " y el numero de serie es " + this.nserie);
